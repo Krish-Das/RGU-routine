@@ -1,10 +1,9 @@
 const routineData = [
-  //! THIS DATASET DOES NOT CONTAIN RECESS TIME
-  ["", "", "", "JLD / SS", "", ""], // MON
+  ["", "", "", "JLD / SS", "", "LS"], // MON
   ["", "", "", "AS", "JLD", ""], // TUES
   ["JLD", "", "", "", "AS", "LS"], // WED
-  ["", "", "", "", "", ""], // THURS
-  ["", "", "AS", "", "", ""], // FRI
+  ["", "", "SS", "", "", ""], // THURS
+  ["", "", "AS", "", "LS", ""], // FRI
 ];
 
 const allClasses = [];

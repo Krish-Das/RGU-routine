@@ -1,5 +1,6 @@
 :root {
   --border-color: #dadad4;
+  --border-properties: 1px solid var(--border-color);
 }
 
 * {
@@ -7,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
-  border-color: var(--border-color) !important;
 }
 
 html,
@@ -18,11 +18,14 @@ body {
   place-items: center;
 }
 
-table {
+.wraper {
+  position: relative;
+}
+.wraper table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid;
+  border: var(--border-properties);
   max-width: 800px;
   margin-inline: auto;
   font-size: 0.8rem;
@@ -34,7 +37,7 @@ th,
 td {
   text-align: left;
   padding: 8px;
-  border-left: 1px solid;
+  border-left: var(--border-properties);
   padding: 1.3rem;
 }
 
@@ -51,4 +54,26 @@ tr:nth-child(1) {
 }
 tr:not(:nth-child(1)) th {
   font-weight: normal;
+}
+
+.button__show-math {
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 0.63rem;
+  letter-spacing: 0.1ch;
+  color: white;
+  background-color: black;
+  background: none;
+  font-size: 0.65rem;
+  color: black;
+  border: 1px dotted black;
+  cursor: pointer;
 }
