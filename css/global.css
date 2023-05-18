@@ -1,0 +1,54 @@
+:root {
+  --border-color: #dadad4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  border-color: var(--border-color) !important;
+}
+
+html,
+body {
+  font-family: "Uncut Sans Variable", Sans-serif;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid;
+  max-width: 800px;
+  margin-inline: auto;
+  font-size: 0.8rem;
+  letter-spacing: 0.05ch;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-left: 1px solid;
+  padding: 1.3rem;
+}
+
+th {
+  font-weight: bolder;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(1) {
+  font-size: 0.7rem;
+}
+tr:not(:nth-child(1)) th {
+  font-weight: normal;
+}
