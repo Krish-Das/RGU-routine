@@ -76,4 +76,5 @@ tr:not(:nth-child(1)) th {
   color: black;
   border: 1px dotted black;
   cursor: pointer;
+  display: none;
 }
