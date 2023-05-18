@@ -3,7 +3,7 @@ const routineData = [
   ["", "", "", "JLD / SS", "", ""], // MON
   ["", "", "", "AS", "JLD", ""], // TUES
   ["JLD", "", "", "", "AS", "LS"], // WED
-  ["", "", "Delete", "", "", ""], // THURS
+  ["", "", "", "", "", ""], // THURS
   ["", "", "AS", "", "", ""], // FRI
 ];
 
@@ -29,7 +29,7 @@ dynamicContent.forEach((content, idx) => {
 allClasses.forEach((element, idx) => {
   element.forEach((element, newIdx) => {
     loopCount++;
-    element.innerText = data[idx][newIdx];
+    element.innerText = routineData[idx][newIdx];
   });
 });
 
